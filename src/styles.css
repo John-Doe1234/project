@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .headerLink{
+        @apply px-10 pt-5
+        text-center
+        align-middle
+        cursor-pointer
+        hover:bg-theme-shadow
+        font-merriweather
+
+    }
+
+    .headerLinkMain{
+        @apply px-10 pt-8
+        text-center
+        align-middle
+        cursor-pointer
+        hover:bg-theme-shadow
+        font-merriweather
+    }
+}
+
+@font-face {
+    font-family: 'Merriweather'; 
+    src: url("./app/fonts/Merriweather-Light.ttf") format("opentype")
+}
+
+@font-face{
+    font-family: 'Merriweather-black';
+    src: url("./app/fonts/Merriweather-Black.ttf")
+}
+
+@font-face{
+    font-family: 'Baskerville-bold';
+    src: url("./app/fonts/LibreBaskerville-Bold.ttf")
+}
